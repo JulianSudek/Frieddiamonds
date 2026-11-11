@@ -218,6 +218,20 @@ header{display:none!important}
 .spotify-link{left:80.7%;top:81.7%;width:6.4%;height:10.4%}
 @media(max-aspect-ratio:3/2){.reference-hero{height:auto;aspect-ratio:3/2}.hotspots{width:100%;height:100%}}
 @media(max-width:650px){.reference-hero{min-height:0}.hotspot:focus-visible{outline-width:2px}}
+</style><style id="missing-artwork-fallback">
+.reference-hero{height:100svh;min-height:650px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0b0a0b}
+.hero-image{width:min(100%,150vh);height:100%;background:transparent!important;position:relative}
+.hero-image:before{content:"JULIAN.SUDEK";position:absolute;top:10%;left:50%;transform:translateX(-50%) rotate(-3deg);white-space:nowrap;color:#fff0d6;font:italic 900 clamp(45px,10vw,160px)/1 Georgia,serif;letter-spacing:-.09em;text-shadow:4px 5px #705383}
+.hero-image:after{content:"✦  ♢  ✦";position:absolute;top:46%;left:50%;transform:translate(-50%,-50%);font-size:clamp(80px,15vw,240px);color:#e3a9e0;text-shadow:0 8px #fff0d6}
+.hotspots{position:absolute;inset:0;max-width:min(100vw,150vh);margin:auto;pointer-events:none}
+.hotspot{pointer-events:auto}
+.hotspots a span{display:block!important;position:static!important;clip:auto!important;width:auto!important;height:auto!important;overflow:visible!important;white-space:nowrap!important}
+.hotspots .song-link,.hotspots .label-link,.hotspots .merch-link,.hotspots .socials-link{top:29%!important;height:auto!important;min-height:36px;display:flex;justify-content:center;align-items:center;border:2px solid #fff0d6;background:#0b0a0b;color:#fff0d6;text-decoration:none;font:italic bold clamp(10px,1.5vw,18px) Georgia,serif;border-radius:99px;padding:7px}
+.hotspots .song-link{background:#e3a9e0;color:#0b0a0b}
+.hotspots .previous-link,.hotspots .play-link,.hotspots .next-link,.hotspots .spotify-link{background:#e3a9e0;color:#0b0a0b;border:2px solid #fff0d6;border-radius:99px;top:82%!important}
+.hotspots .previous-link span,.hotspots .play-link span,.hotspots .next-link span,.hotspots .spotify-link span{font-size:0!important}
+.hotspots .previous-link:after{content:"◀◀"}.hotspots .play-link:after{content:"▶"}.hotspots .next-link:after{content:"▶▶"}.hotspots .spotify-link:after{content:"♫"}
+@media(max-width:700px){.reference-hero{min-height:440px;height:75svh}.hero-image:before{top:17%}.hero-image:after{top:52%}.hotspots .song-link,.hotspots .label-link,.hotspots .merch-link,.hotspots .socials-link{top:33%!important;font-size:9px;padding:4px;min-height:28px}}
 </style></head><body>
 <header><a href="#top">JULIAN.SUDEK ✦</a><span class="stamp">SONGWRITER · PRODUCER · LABEL OWNER</span></header>
 <main id="top"><div class="reference-hero" aria-label="Julian Sudek landing page"><div class="hero-image" role="img" aria-label="Julian Sudek illustration with winged lion, dolphins, palms, and retro player"></div><nav class="hotspots" aria-label="Site navigation"><a class="hotspot song-link" href="#songs" aria-label="Song Examples"><span>Song Examples</span></a><a class="hotspot label-link" href="#releases" aria-label="Fried Diamonds"><span>Fried Diamonds</span></a><a class="hotspot merch-link" href="#releases" aria-label="Releases and Merch"><span>Releases / Merch</span></a><a class="hotspot socials-link" href="#socials" aria-label="Socials"><span>Socials</span></a><button class="hotspot previous-link" id="hero-prev" aria-label="Previous song"><span>Previous song</span></button><button class="hotspot play-link" id="hero-play" aria-label="Play selected song"><span>Play selected song</span></button><button class="hotspot next-link" id="hero-next" aria-label="Next song"><span>Next song</span></button><a class="hotspot spotify-link" href="#songs" aria-label="Open Spotify player"><span>Spotify player</span></a></nav></div>
